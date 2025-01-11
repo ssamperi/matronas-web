@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "angular-schematics.schematicsDefaultOptions": {
+        "angular-*": {
+            "externalTemplate": true
+        }
+    }
+}

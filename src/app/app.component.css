@@ -1,0 +1,12 @@
+matrona-header {
+    background-color: blue;
+    height: 100px;
+}
+matrona-main {
+    background-color: chartreuse;
+    flex: 1;
+}
+matrona-footer {
+    background-color: red;
+    height: 100px;
+}
