@@ -1,0 +1,30 @@
+@if(currentWidth() < 670) {
+    <img
+        class="menu-icon" 
+        src="/images/menu.svg" 
+        alt="icono menu oculto"
+        (pointerdown)="toggleMenu()">
+        <ul 
+            class="menu-options-hidden-container"
+            [ngClass]="{'hide-menu': !isMenuOpened()}">
+            @for(option of menu; track $index) {
+                <li 
+                    class="menu-option"
+                    (pointerdown)="scrollToSection(option.link)">
+                        {{option.title | translate}}</li>
+            }
+        </ul>
+} @else {
+    <nav>
+        <ul class="menu-options-container">
+            @for(option of menu; track $index) {
+                <li 
+                    class="menu-option"
+                    (pointerdown)="scrollToSection(option.link)">
+                        {{option.title | translate}}</li>
+            }
+        </ul>
+    </nav>
+}
+
+
