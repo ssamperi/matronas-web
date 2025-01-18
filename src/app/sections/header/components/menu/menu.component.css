@@ -1,0 +1,40 @@
+:host {
+    align-self: flex-end;
+    position: relative;
+}
+
+.menu-options-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu-options-hidden-container {
+    position: absolute;
+    padding: 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.5rem;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--primary-color);
+}
+
+.menu-option {
+    width: 9.25rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu-option:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    width: 24px;
+    cursor: pointer;
+}
+.hide-menu {
+    display: none;
+}
