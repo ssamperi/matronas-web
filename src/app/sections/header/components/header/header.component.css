@@ -1,0 +1,28 @@
+:host {
+    width: 100%;
+    background-color: #fff;
+}
+
+header#top {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-logo {
+    min-width: 5.5rem;
+    width: 5.5rem;
+}
+
+.language-option-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.language-option {
+    cursor: pointer;
+}
+
+.language-selected {
+    text-decoration: underline;
+}

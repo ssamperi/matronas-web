@@ -1,5 +1,5 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="100%" viewBox="0 0 650 520" enable-background="new 0 0 650 520" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	  width="200" viewBox="0 0 650 660" enable-background="new 0 0 650 520" xml:space="preserve">
 <!-- background color -->
 <path fill="none" opacity="1.000000" stroke="none" 
 	d="
@@ -52,7 +52,7 @@ M229.097961,6.492987
 	C328.513885,46.747841 285.820465,17.554161 229.097961,6.492987 
 z"/>
 <!-- logo color -->
-<path fill="#e3d38a" opacity="1.000000" stroke="none" 
+<path fill="#d3ab9e" opacity="1.000000" stroke="none" 
 	d="
 M229.518936,6.597861 
 	C285.820465,17.554161 328.513885,46.747841 352.829651,98.890625 
@@ -128,4 +128,7 @@ M140.223099,220.784027
 	C95.478943,120.438469 101.969238,147.086975 113.812927,172.232315 
 	C121.599480,188.763947 131.221420,204.431076 140.223099,220.784027 
 z"/>
+
+<text x="335" y="610" font-family="Candara" font-size="100" fill="#d3ab9e" text-anchor="middle" dominant-baseline="middle">Matronas 360</text>
+
 </svg>
