@@ -29,13 +29,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
       if (isPlatformBrowser(this.platformId)) {
-        const body = document.body;
         const storedLanguage = localStorage.getItem('matrona360-language');
-        if(storedLanguage) {
-          this.languageSelectionService.setLanguage(storedLanguage);
-          this.translateService.use(storedLanguage);
-        }
-        body.style.visibility = 'visible';
+        if(storedLanguage) this.languageSelectionService.setLanguage(storedLanguage);
     }
   }
 }
