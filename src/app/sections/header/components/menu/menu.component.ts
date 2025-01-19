@@ -1,14 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, HostListener, Inject, OnInit, PLATFORM_ID, signal } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { scrollIntoView } from '../../../../shared/utils/scrollIntoView';
-import { isPlatformBrowser, NgClass } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'header-menu',
   standalone: true,
   imports: [
-      TranslateModule,
-      NgClass
+      TranslateModule
     ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css',
@@ -56,6 +55,9 @@ export class MenuComponent implements OnInit {
   }
 
   scrollToSection(section: string) {
+    setTimeout(() => {
+      this._isMenuOpened.set( false );
+    }, 200);
     scrollIntoView(section);
   }
 
