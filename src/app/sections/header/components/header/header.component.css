@@ -1,28 +1,47 @@
-:host {
-    width: 100%;
-    background-color: #fff;
+/* ! TODO implementar con tailwind */
+#top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), 
+                                    rgba(47, 72, 88, 1)), 
+                                    url(/images/hero1.webp);
 }
 
-header#top {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: space-around;
+/* 
+
+.hero-text {
+    animation: fadeIn 2s ease-out;
 }
 
-.header-logo {
-    min-width: 5.5rem;
-    width: 5.5rem;
+.hero-text > h1 {
+    font-size: 3.5rem;
+    word-spacing: normal;
+    letter-spacing: 0.2rem;
+    animation: fadeInUp 1.5s ease-out;
 }
 
-.language-option-container {
-    display: flex;
-    gap: 1rem;
+.hero-text > p {
+    font-size: 1.75rem;
+    animation: fadeInUp 2s ease-out;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
+    font-style: italic;
 }
 
-.language-option {
-    cursor: pointer;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.language-selected {
-    text-decoration: underline;
-}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */

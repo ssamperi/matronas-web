@@ -2,11 +2,15 @@ import { ChangeDetectionStrategy, Component, inject, Inject, PLATFORM_ID } from 
 import { MenuComponent } from "../menu/menu.component";
 import { isPlatformBrowser } from '@angular/common';
 import { LanguageSelectionService } from '../../../../shared/services/languageSelection.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'matrona-header',
   standalone: true,
-  imports: [MenuComponent],
+  imports: [
+    MenuComponent,
+    TranslateModule
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -26,15 +30,14 @@ export class HeaderComponent {
   private setLanguageSelectedClass(language: string) {
     const languageOption = document.querySelectorAll('.language-option');
     languageOption.forEach( option => {
-      if(option.textContent!.toLowerCase() === language){
-        option.classList.add('language-selected');
-      }
-    } )
+        if(option.textContent!.toLowerCase() === language) option.classList.add('underline', 'text-primary');
+        else option.classList.remove('underline', 'text-primary');
+      });
   }
 
   setLanguage(language: string) {
     if(language === this.languageSelectionService.languageSelected()) return;
     this.languageSelectionService.setLanguage(language);
-    location.reload();
+    this.setLanguageSelectedClass(language);
   }
  }
