@@ -3,9 +3,8 @@ import { HeaderComponent } from "./sections/header/components/header/header.comp
 import { FooterComponent } from "./sections/footer/components/footer/footer.component";
 import { RouterOutlet } from '@angular/router';
 import { LanguageSelectionService } from './shared/services/languageSelection.service';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { isPlatformBrowser } from '@angular/common';
-import { BackTopBtnComponent } from "./shared/components/back-top-btn/back-top-btn.component";
+import { WhatsappBtnComponent } from "./shared/components/whatsapp-btn/whatsapp-btn.component";
 
 @Component({
   selector: 'app-root',
@@ -14,8 +13,7 @@ import { BackTopBtnComponent } from "./shared/components/back-top-btn/back-top-b
     HeaderComponent,
     FooterComponent,
     RouterOutlet,
-    TranslateModule,
-    BackTopBtnComponent
+    WhatsappBtnComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -23,7 +21,6 @@ import { BackTopBtnComponent } from "./shared/components/back-top-btn/back-top-b
 export class AppComponent implements OnInit {
 
   private languageSelectionService = inject(LanguageSelectionService);
-  private translateService = inject(TranslateService);
   
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 

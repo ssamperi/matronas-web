@@ -1,38 +1,22 @@
-/* ! TODO implementar con tailwind */
-#top {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), 
-                                    rgba(47, 72, 88, 1)), 
-                                    url(/images/hero1.webp);
+.hero-image {
+    mask-image: linear-gradient(
+        transparent,
+        black 20%,
+        black 80%,
+        transparent
+    );
+    z-index: -1;
 }
-
-/* 
 
 .hero-text {
     animation: fadeIn 2s ease-out;
 }
 
 .hero-text > h1 {
-    font-size: 3.5rem;
+    line-height: 1.5;
     word-spacing: normal;
     letter-spacing: 0.2rem;
     animation: fadeInUp 1.5s ease-out;
-}
-
-.hero-text > p {
-    font-size: 1.75rem;
-    animation: fadeInUp 2s ease-out;
-    margin-bottom: 0;
-    padding-bottom: 4rem;
-    font-style: italic;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 @keyframes fadeInUp {
@@ -44,4 +28,4 @@
         opacity: 1;
         transform: translateY(0);
     }
-} */
+}

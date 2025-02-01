@@ -1,21 +1,35 @@
 <div class="flex flex-col">
-    <img class="w-10 flex-start cursor-pointer ml-2" 
-    src="/images/menu.svg" 
-    alt="icono menu oculto"
-    (pointerdown)="toggleMenu()">
-    <nav>
-        @if(isMenuOpened()) {
-            <img class="absolute w-5 top-4 right-4 z-10" 
-            src="/images/close-menu.svg" 
-            alt="boton cerrar menu"
+    @if(currentWidth() <= 768) {
+        <img class="w-10 mr-8 cursor-pointer" 
+            src="/icons/menu.svg" 
+            alt="icono menu oculto"
             (pointerdown)="toggleMenu()">
-            <ul class="menu-options-container flex flex-col justify-center gap-4 text-xl absolute top-0 bg-primary w-full h-3/6">
-            @for(option of menu; track $index) {
-                <li 
-                    (pointerdown)="scrollToSection(option.link)">
+        @if(isMenuOpened()) {
+            <nav>
+                <img class="absolute w-8 top-10 right-10 z-10" 
+                src="/icons/close-menu.svg" 
+                alt="boton cerrar menu"
+                (pointerdown)="toggleMenu()">
+                <ul class="menu-options-container flex flex-col justify-center items-center gap-6 text-3xl fixed inset-0 bg-primary">
+                    <li>(Próximamente)</li>
+                    @for(option of menu; track $index) {
+                        <li 
+                        (pointerdown)="scrollToSection(option.link)">
                         {{option.title | translate}}</li>
+                    }
+                </ul>
+            </nav> 
+        }
+    } @else {
+        <nav>
+            <ul class="menu-options-container font-medium flex gap-6 text-xl mr-8">
+                <li class="text-primary">(Próximamente)</li>
+                @for(option of menu; track $index) {
+                    <li class="cursor-pointer text-primary hover:text-primary-dark"
+                    (pointerdown)="scrollToSection(option.link)">
+                    {{option.title | translate}}</li>
                 }
             </ul>
-        }
-    </nav> 
+        </nav>
+    }
 </div>
