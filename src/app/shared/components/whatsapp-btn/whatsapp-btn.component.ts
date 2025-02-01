@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-
 @Component({
   selector: 'whatsapp-btn',
   standalone: true,
@@ -10,10 +9,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class WhatsappBtnComponent { 
   
-  openWhatsapp() {
+  public readonly whatsappLink = this.createWhatsappLink();
+
+  private createWhatsappLink(): string {
     const message = encodeURIComponent('¡Hola! Estoy interesada en las actividades, me puedes dar más información? Gracias!');
-    const phoneNumber = '+34620723466';
-    const url = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.location.href = url;
+    return`https://wa.me/+34620723466?text=${message}`;
   }
 }
