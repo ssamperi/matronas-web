@@ -1,18 +1,18 @@
-<header id="top"
-        class="w-full flex flex-col items-center h-auto text-white bg-no-repeat bg-center bg-cover">
-    <div class="flex self-end gap-2 mr-1 text-sm">
-        <span class="language-option cursor-pointer" (pointerdown)="setLanguage('cat')">CAT</span>
-        <span class="language-option cursor-pointer" (pointerdown)="setLanguage('es')">ES</span>
-    </div>
-    <header-menu class="w-full"/>
-    <img class="min-w-48 w-48"
-        src="/images/matronas360-solo-logo.svg" 
+<header class="w-full h-screen flex flex-col gap-10 text-white bg-no-repeat bg-center bg-cover">
+    <div class="flex justify-between items-end">
+        <img class="min-w-16 w-16 mt-6 ml-7"
+        src="/icons/matronas360-solo-logo.svg" 
         alt="logo empresa">
-    <div class="flex flex-col gap-2 mt-7">
-        <h1 class="text-4xl pl-3 pr-3 mb-6">
-            {{'HERO_TEXT_TITULO' | translate}}</h1>
-            <!-- ! TODO revisr para pc -->
-           <!-- <p class="text-2xl hidden md:block">
-            {{'HERO_TEXT_SUBTITULO' | translate}}</p> -->
+        <header-menu />
     </div>
+
+    <img class="hero-image"
+        src="/images/hero1.webp" 
+        alt="imagen barriga mama">
+
+    <div class="hero-text flex flex-col gap-2 mt-7">
+        <h1 class="text-4xl pl-3 pr-3 text-primary-dark">
+            {{'HERO_TEXT_TITULO' | translate}}</h1>
+    </div>
+    
 </header>

@@ -17,13 +17,10 @@ export class MenuComponent implements OnInit {
   
   public readonly menu = [
     {
-      title: 'MENU_AGUA', link: 'agua'
+      title: 'MENU_CONOCENOS', link: 'conocenos'
     },
     {
-      title: 'MENU_TIERRA', link: 'tierra'
-    },
-    {
-      title: 'MENU_PREP_PARTO', link: 'prep-parto'
+      title: 'MENU_SERVICIOS', link: 'servicios'
     },
     {
       title: 'MENU_PRECIOS', link: 'precios'
@@ -51,7 +48,6 @@ export class MenuComponent implements OnInit {
   onResize(event: Event) {
     const newWidth = event.target as Window;
     this._currentWidth.set(newWidth.innerWidth);
-    if(newWidth.innerWidth > 670) this._isMenuOpened.set(false);
   }
 
   scrollToSection(section: string) {

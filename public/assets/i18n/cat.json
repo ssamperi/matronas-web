@@ -1,10 +1,9 @@
 {
-    "MENU_INICIO": "Inici",
+    "MENU_CONOCENOS": "Qui som?",
+    "MENU_SERVICIOS": "Serveis",
     "MENU_AGUA": "IPAP Aigua",
     "MENU_TIERRA": "IPAP Terra",
-    "MENU_PREP_PARTO": "Preparació al part",
     "MENU_PRECIOS": "Preus",
     "MENU_CONTACTO": "Contacte",
-    "HERO_TEXT_TITULO": "Enforteix el teu cos i la ment amb el suport de la teva llevadora",
-    "HERO_TEXT_SUBTITULO": "Empoderant el teu embaraç preparant pel naixement"
+    "HERO_TEXT_TITULO": "Enforteix el teu cos i la ment amb el suport de la teva llevadora"
 }
