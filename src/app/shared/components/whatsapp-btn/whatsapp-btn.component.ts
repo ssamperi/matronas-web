@@ -12,7 +12,7 @@ export class WhatsappBtnComponent {
   
   openWhatsapp() {
     const message = encodeURIComponent('¡Hola! Estoy interesada en las actividades, me puedes dar más información? Gracias!');
-    const phoneNumber = '620723466';
+    const phoneNumber = '+34620723466';
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.location.href = url;
   }
