@@ -20,6 +20,8 @@
 * {
     min-width: 0;
     font: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 *, 
@@ -54,7 +56,3 @@ h6 {
 p {
     text-wrap: pretty;
 }
-
-/* :root {
-    --primary-color: #d3ab9e;
-} */
