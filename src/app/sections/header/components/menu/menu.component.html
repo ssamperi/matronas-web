@@ -1,16 +1,21 @@
 <div class="flex flex-col">
-    @if(currentWidth() <= 768) {
-        <img class="w-10 mr-8 cursor-pointer" 
-            src="/icons/menu.svg" 
+    <!-- ! hidden display menu -->
+        <img class="md:hidden w-11 mr-8 cursor-pointer" 
+            src="/icons/burguer-menu.svg" 
             alt="icono menu oculto"
             (pointerdown)="toggleMenu()">
         @if(isMenuOpened()) {
-            <nav>
-                <img class="absolute w-8 top-10 right-10 z-10" 
-                src="/icons/close-menu.svg" 
-                alt="boton cerrar menu"
-                (pointerdown)="toggleMenu()">
-                <ul class="menu-options-container flex flex-col justify-center items-center gap-6 text-3xl fixed inset-0 bg-primary">
+            <nav class="flex flex-col gap-24 text-white text-4xl fixed inset-0 bg-primary z-40"
+                [ngClass]="{'menu-open': menuAnimation(), 'menu-close': !menuAnimation()}">
+                   
+                <div class="flex justify-between">
+                        <language-selector [isSmallDisplay]="true"/>
+                        <img class="w-11 mr-10 mt-10"
+                            src="/icons/close-menu.svg" 
+                            alt="boton cerrar menu"
+                            (pointerdown)="toggleMenu()">
+                </div>
+                <ul class="flex flex-col gap-14">
                     <li>(Próximamente)</li>
                     @for(option of menu; track $index) {
                         <li 
@@ -20,9 +25,9 @@
                 </ul>
             </nav> 
         }
-    } @else {
-        <nav>
-            <ul class="menu-options-container font-medium flex gap-6 text-xl mr-8">
+        <!-- ! normal display menu -->
+        <nav class="hidden md:flex gap-4">
+            <ul class="font-medium flex gap-6 text-xl">
                 <li class="text-primary">(Próximamente)</li>
                 @for(option of menu; track $index) {
                     <li class="cursor-pointer text-primary hover:text-primary-dark"
@@ -30,6 +35,8 @@
                     {{option.title | translate}}</li>
                 }
             </ul>
+            <div class="w-px h-7 ml-1 rounded-lg opacity-60 bg-primary-dark"></div>
+            <language-selector [isSmallDisplay]="false" class="self-center relative top-0.5" />
         </nav>
-    }
+    
 </div>
