@@ -1,0 +1,12 @@
+.open-dropdown {
+    animation: openDropdown 0.4s ease-out;
+}
+
+@keyframes openDropdown {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+} 
