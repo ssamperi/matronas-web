@@ -1,19 +1,22 @@
-import { ChangeDetectionStrategy, Component, computed, HostListener, Inject, OnInit, PLATFORM_ID, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { scrollIntoView } from '../../../../shared/utils/scrollIntoView';
-import { isPlatformBrowser } from '@angular/common';
+import { LanguageSelectorComponent } from "../language-selector/language-selector.component";
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'header-menu',
   standalone: true,
   imports: [
-      TranslateModule
-    ],
+    TranslateModule,
+    LanguageSelectorComponent,
+    NgClass
+],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
   
   public readonly menu = [
     {
@@ -24,32 +27,15 @@ export class MenuComponent implements OnInit {
     },
     {
       title: 'MENU_PRECIOS', link: 'precios'
-    },
-    {
-      title: 'MENU_CONTACTO', link: 'contacto'
     }
   ];
-
-  private _currentWidth = signal<number>(0);
-  public currentWidth = computed<number>( () => this._currentWidth());
 
   private _isMenuOpened = signal<boolean>(false);
   public isMenuOpened= computed<boolean>( () => this._isMenuOpened());
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  private _menuAnimation = signal<boolean>(false);
+  public menuAnimation= computed<boolean>( () => this._menuAnimation());
   
-  ngOnInit() {
-    if (isPlatformBrowser(this.platformId)) {
-      this._currentWidth.set(window.innerWidth);
-    }
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: Event) {
-    const newWidth = event.target as Window;
-    this._currentWidth.set(newWidth.innerWidth);
-  }
-
   scrollToSection(section: string) {
     setTimeout(() => {
       this._isMenuOpened.set( false );
@@ -58,6 +44,18 @@ export class MenuComponent implements OnInit {
   }
 
   toggleMenu() {
-    this._isMenuOpened.update( oldValue => !oldValue );
+    if(this._isMenuOpened()) {
+      this._menuAnimation.set( false );
+      setTimeout(() => {
+        this._isMenuOpened.set( false );
+      }, 300);
+    } else {
+      this._isMenuOpened.set( true );
+      this._menuAnimation.set( true );
+    }
+  }
+
+  selectLanguage() {
+
   }
 }

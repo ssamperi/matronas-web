@@ -1,4 +1,34 @@
-<div class="flex gap-4 text-sm absolute top-4 right-4 z-10">
-    <span class="language-option cursor-pointer" (pointerdown)="setLanguage('cat')">CAT</span>
-    <span class="language-option cursor-pointer" (pointerdown)="setLanguage('es')">ES</span>
-</div>
+@if(isSmallDisplay()) {
+    <div class="flex w-24 relative gap-2 ml-10 mt-10"
+        (pointerdown)="toggleLanguageSelector()">
+        <img class="w-11 min-w-11"
+                src="/icons/language-selector.svg" 
+                alt="selector idioma"
+        >
+        <p class="self-center text-xl">{{languageSelectionService.languageSelected() | uppercase}}</p>
+        @if(isLanguageSelectorOpened()) {
+            <div class="open-dropdown flex flex-col items-start gap-3 absolute text-2xl top-full left-2/3">
+                @if(languageSelectionService.languageSelected() === 'es'){
+                    <p (pointerdown)="setLanguage('cat')">CAT</p>
+                } @else {
+                    <p (pointerdown)="setLanguage('es')">ES</p>
+                }
+            </div>
+        }
+
+    </div>
+} @else {
+    <div class="flex gap-4 text-sm font-light text-primary-dark mr-8">
+        <p class="cursor-pointer hover:text-primary"
+            [ngClass]="{'underline': languageSelectionService.languageSelected() === 'cat',
+                'font-bold': languageSelectionService.languageSelected() === 'cat',
+                'text-primary': languageSelectionService.languageSelected() === 'cat'}"
+            (pointerdown)="setLanguage('cat')">CAT</p>
+        <p class="cursor-pointer hover:text-primary" 
+            [ngClass]="{'underline': languageSelectionService.languageSelected() === 'es',
+                'font-bold': languageSelectionService.languageSelected() === 'es',
+                'text-primary': languageSelectionService.languageSelected() === 'es'}"
+            (pointerdown)="setLanguage('es')">ES</p>
+    </div>
+}
+
