@@ -1,8 +1,11 @@
 {
     "MENU_CONOCENOS": "Qui som?",
     "MENU_SERVICIOS": "Serveis",
-    "MENU_AGUA": "IPAP Aigua",
-    "MENU_TIERRA": "IPAP Terra",
+    "MENU_AGUA": "AIPAP Aigua",
+    "MENU_TIERRA": "AIPAP Terra",
     "MENU_PRECIOS": "Preus",
-    "HERO_TEXT_TITULO": "Enforteix el teu cos i la ment amb el suport de la teva llevadora"
+    "MENU_CONTACTO": "Contacte",
+    "HERO_TEXT_TITULO": "Enforteix el teu cos i ment amb el suport de la teva llevadora",
+    "ABOUT_US":"",
+    "SERVICIOS":"Serveis"
 }

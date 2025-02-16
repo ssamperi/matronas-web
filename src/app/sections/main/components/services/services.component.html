@@ -1,0 +1,17 @@
+<section class="flex flex-col items-center gap-8">
+    <h2 class="text-lg">AIPAP</h2>
+    <p class="max-w-[70%] italic text-balance">"{{'AIPAP_INFO' | translate}}"</p>
+    <article class="flex justify-evenly">
+        <img class="max-w-[50%] h-auto aspect-[1/1] object-cover rounded-full"
+            src="/images/aipap-agua-1.webp" alt="muejeres embarazadas flotando en el agua">
+        <h3 class="cursor-pointer self-center"
+            [routerLink]="['/aipap-agua']"
+            >{{'AIPAP_AGUA' | translate}}</h3>
+    </article>
+    <article class="flex justify-evenly">
+        <h3 class="cursor-pointer self-center"
+            [routerLink]="['/aipap-agua']">{{'AIPAP_TIERRA' | translate}}</h3>
+        <img class="max-w-[50%] h-auto aspect-[1/1] object-cover rounded-full"
+            src="/images/aipap-tierra-1.webp" alt="muejeres embarazada haciendo ejercicio">
+    </article>
+</section>

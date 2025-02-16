@@ -19,14 +19,17 @@ import { NgClass } from '@angular/common';
 export class MenuComponent {
   
   public readonly menu = [
-    {
-      title: 'MENU_CONOCENOS', link: 'conocenos'
-    },
+    // {
+    //   title: 'MENU_CONOCENOS', link: 'about-us'
+    // },
     {
       title: 'MENU_SERVICIOS', link: 'servicios'
     },
     {
       title: 'MENU_PRECIOS', link: 'precios'
+    },
+    {
+      title: 'MENU_CONTACTO', link: 'contacto'
     }
   ];
 

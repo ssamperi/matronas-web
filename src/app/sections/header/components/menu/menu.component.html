@@ -16,7 +16,6 @@
                             (pointerdown)="toggleMenu()">
                 </div>
                 <ul class="flex flex-col gap-14">
-                    <li>(Próximamente)</li>
                     @for(option of menu; track $index) {
                         <li 
                         (pointerdown)="scrollToSection(option.link)">
@@ -28,7 +27,6 @@
         <!-- ! normal display menu -->
         <nav class="hidden md:flex gap-4">
             <ul class="font-medium flex gap-6 text-xl">
-                <li class="text-primary">(Próximamente)</li>
                 @for(option of menu; track $index) {
                     <li class="cursor-pointer text-primary hover:text-primary-dark"
                     (pointerdown)="scrollToSection(option.link)">

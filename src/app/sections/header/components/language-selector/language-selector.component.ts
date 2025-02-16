@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { LanguageSelectionService } from '../../../../shared/services/languageSelection.service';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'language-selector',
   standalone: true,
-  imports: [CommonModule],
+  imports: [NgClass],
   templateUrl: './language-selector.component.html',
   styleUrl: './language-selector.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

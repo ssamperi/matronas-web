@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MenuComponent } from "../menu/menu.component";
 import { TranslateModule } from '@ngx-translate/core';
 @Component({
-  selector: 'matrona-header',
+  selector: 'matrona-header-menu',
   standalone: true,
   imports: [
     MenuComponent,
