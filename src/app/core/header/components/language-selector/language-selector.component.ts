@@ -11,10 +11,9 @@ import { NgClass } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LanguageSelectorComponent {
-
+// ! TODO CHECK WITH SM-MD
   public languageSelectionService = inject(LanguageSelectionService);
-  public isSmallDisplay = input<boolean>(false);
-  
+  public isMobile = input.required<boolean>();
   private _isLanguageSelectorOpened = signal<boolean>(false);
   public isLanguageSelectorOpened= computed<boolean>( () => this._isLanguageSelectorOpened());
 

@@ -1,19 +1,21 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { forkJoin } from 'rxjs';
 import { customClasses } from '../../../../shared/customTailwindClasses/customClasses';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'section-aipap-agua',
   standalone: true,
-  imports: [TranslateModule, RouterLink],
+  imports: [TranslateModule],
   templateUrl: './aipap-agua.component.html',
   styleUrl: './aipap-agua.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class AipapAguaComponent { 
 
+  private metaTags = inject(Meta);
+  private metaTitle = inject(Title)
   private translateService = inject(TranslateService);
   private _translatedLists = signal<any>({});
   public translatedLists = computed<any>(() => this._translatedLists());
@@ -22,6 +24,7 @@ export default class AipapAguaComponent {
   constructor() {
     this.translateLists();
     this.customClasses = customClasses;
+    this.setMetaTags();
   }
   
   private translateLists() {
@@ -39,5 +42,12 @@ export default class AipapAguaComponent {
           this._translatedLists.update( prev => ({...prev, [key]: lists[key]}));
         }
     });
+  }
+
+  // ! TODO TRANSLATE TAGS
+  private setMetaTags() {
+      this.metaTitle.setTitle(`Matronas 360 - AIPAP Agua`);
+      this.metaTags.updateTag({ name: 'description', content: 'Descubre los beneficios del método AIPAP Agua'});
+      this.metaTags.updateTag({ name: 'keywords', content: 'Matronas 360, AIPAP Agua, beneficios, agua, bebe, mama, piscina, embarazo, ejercicio durante el embarazo'});
   }
 }

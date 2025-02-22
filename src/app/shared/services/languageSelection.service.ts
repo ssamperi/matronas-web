@@ -10,9 +10,9 @@ export class LanguageSelectionService {
   public languageSelected = computed<string>( () => this._languageSelected());
   private translateService = inject(TranslateService);
 
-  setLanguage(language: string) {
+  public setLanguage(language: string) {
     this._languageSelected.set(language);
-    localStorage.setItem('matrona360-language', this._languageSelected());
+    localStorage.setItem('matronas360-language', this._languageSelected());
     this.translateService.use(language);
   }
 }

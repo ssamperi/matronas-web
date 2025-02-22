@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { scrollIntoView } from '../../../../shared/utils/scrollIntoView';
 import { LanguageSelectorComponent } from "../language-selector/language-selector.component";
 import { NgClass } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'header-menu',
@@ -10,7 +11,7 @@ import { NgClass } from '@angular/common';
   imports: [
     TranslateModule,
     LanguageSelectorComponent,
-    NgClass
+    NgClass,
 ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css',
@@ -33,6 +34,7 @@ export class MenuComponent {
     }
   ];
 
+  private router = inject(Router);
   private _isMenuOpened = signal<boolean>(false);
   public isMenuOpened= computed<boolean>( () => this._isMenuOpened());
 
@@ -43,7 +45,7 @@ export class MenuComponent {
     setTimeout(() => {
       this._isMenuOpened.set( false );
     }, 200);
-    scrollIntoView(section);
+    scrollIntoView(section, this.router, '/hola');
   }
 
   toggleMenu() {
