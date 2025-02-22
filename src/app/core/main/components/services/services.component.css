@@ -1,0 +1,9 @@
+.aipap-agua-image {
+    box-shadow: 0 0 15px #4F757F;
+    filter: brightness(60%);
+}
+
+.aipap-tierra-image {
+    box-shadow: 0 0 15px #5E5376;
+    filter: brightness(60%);
+}

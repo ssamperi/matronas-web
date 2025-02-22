@@ -1,17 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* ! BACKUP FONT */
 @font-face {
     font-family: 'Nunito';
-    src: url(/fonts/Nunito-VariableFont_wght.ttf) format('truetype');
+    src: url(/fonts/nunito/Nunito-VariableFont_wght.ttf) format('truetype');
     font-weight: 100 900; 
     font-style: normal;
 }
   
 @font-face {
     font-family: 'Nunito';
-    src: url(/fonts/Nunito-Italic-VariableFont_wght.ttf) format('truetype');
+    src: url(/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900; 
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf) format('truetype');
     font-weight: 100 900;
     font-style: italic;
 }
@@ -51,6 +65,8 @@ h4,
 h5,
 h6 {
     text-wrap: balance;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 p {
