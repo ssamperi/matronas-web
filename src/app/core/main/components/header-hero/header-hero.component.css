@@ -1,0 +1,37 @@
+.hero-image {
+    mask-image: 
+        linear-gradient(
+            transparent,
+            black 25%,
+            black 65%,
+            transparent),
+        linear-gradient(
+            to right, 
+            transparent, 
+            black 25%, 
+            black 65%, 
+            transparent);
+    mask-composite: intersect;
+}
+
+/* .hero-text {
+    animation: fadeIn 2s ease-out;
+} */
+
+.hero-text > h1 {
+    line-height: 1.5;
+    word-spacing: normal;
+    letter-spacing: 0.2rem;
+    /* animation: fadeInUp 1.5s ease-out; */
+}
+
+/* @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
