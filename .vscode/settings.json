@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Dark",
+    "workbench.colorTheme": "Abyss",
     "angular-schematics.schematicsDefaultOptions": {
         "angular-*": {
             "externalTemplate": true
