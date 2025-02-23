@@ -15,7 +15,6 @@ export class AipapCardComponent {
     {
       phrase: 'AIPAP_AGUA_FRASE',
       more: 'SABER_MAS',
-      type: 'AIPAP_AGUA',
       link: '/aipap-agua',
       image: '/images/aipap-agua-1.webp',
       alt: 'muejeres embarazadas flotando en el agua'
@@ -23,7 +22,6 @@ export class AipapCardComponent {
     {
       phrase: 'AIPAP_TIERRA_FRASE',
       more: 'SABER_MAS',
-      type: 'AIPAP_TIERRA',
       link: '/aipap-tierra',
       image: '/images/aipap-tierra-1.webp',
       alt: 'muejer embarazada haciendo ejercicio en una esterilla'

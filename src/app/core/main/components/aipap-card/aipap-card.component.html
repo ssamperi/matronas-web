@@ -1,14 +1,14 @@
 <section class="flex justify-center flex-wrap mt-8 gap-12">
     @for(card of aipap; track $index) {
-        <article class="section-card w-[30rem] relative overflow-hidden rounded-xl bg-white">
+        <article class="section-card min-w-[22rem] sm:w-[30rem] relative overflow-hidden rounded-xl bg-white">
             <div class="relative min-h-[19rem] flex">
                 <!-- Content section -->
                 <div class="section-card-text absolute inset-0 bg-primary/10">
                     <div class="relative top-40 z-10 w-2/5 p-8 pl-4 flex flex-col gap-4">
-                        <h4 class="w-max text-lg">{{card.phrase | translate }}</h4>
-                        <a class="w-max p-3 bg-primary-purple rounded-lg text-white hover:bg-primary-dark transition-colors duration-300"
+                        <h4 class="w-max text-sm sm:text-lg">{{card.phrase | translate }}</h4>
+                        <a class="w-max text-sm sm:text-lg p-3 font-medium bg-primary-purple rounded-lg text-white hover:bg-primary-dark transition-colors duration-300"
                             [routerLink]="[card.link]">
-                            {{card.more| translate }} {{card.type | translate}}
+                            {{card.more| translate }}
                         </a>
                     </div>
                 </div>
