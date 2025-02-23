@@ -1,3 +1,29 @@
-<section class="w-full h-96">
-    PRICING
+<section class="w-full flex flex-wrap justify-center gap-4">
+    @for(service of services; track $index) {
+        <article class="pricing-card flex flex-col gap-8 rounded-lg p-8 border-primary-dark w-[22rem] h-auto">
+            <h2 class="text-xl font-medium text-primary-dark ">{{service.name | translate }}</h2>
+            <p class="text-4xl font-bold text-primary-dark">{{service.price}}</p>
+            <hr class="text-primary-dark">
+            <ul class="text-left text-lg leading-9">
+                @for(list of service.description; track $index) {
+                    @if(list.promo) {
+                        <li>{{list.promo | translate}} *</li>
+                    } @else {
+                        <li>{{list | translate}}</li>      
+                    }  
+                }
+            </ul>
+            @if(service.promo) {
+                <ul class="text-left italic">
+                    <p class="italic">* {{'PRICING_PROMO' | translate}}</p>
+                    @for(description of service.promo; track $index) {
+                        <li>{{description | translate}}</li>
+                    }
+                </ul>
+            }
+            <button class="self-center p-6 mt-auto w-fit rounded-lg text-xl font-medium text-white bg-primary-purple"
+            (pointerdown)="signUp(service.message)"
+            >{{'PRICING_APUNTARME' | translate}}</button>
+        </article>
+    }
 </section>

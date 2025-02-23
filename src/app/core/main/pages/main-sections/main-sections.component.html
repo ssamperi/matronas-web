@@ -1,13 +1,19 @@
 <!-- ! TODO DEFER -->
 <main class="flex flex-col gap-20">
     <header-hero />
-    <section class="flex flex-col">
+    <section class="flex flex-col gap-24">
         <!-- <about-us /> -->
          <section id="servicios"
                 class="flex flex-col gap-8">
             <h1 [class]="customClasses.SECTION_TITLE">
              {{'MENU_SERVICIOS' | translate}}</h1>
              <matrona-services />
-         </section>
+        </section>
+        <section id="precios"
+            class="flex flex-col gap-8">
+            <h1 [class]="customClasses.SECTION_TITLE">
+                {{'MENU_PRECIOS' | translate}}</h1>
+            <matrona-pricing />
+        </section>
     </section>
 </main>
