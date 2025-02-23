@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { WhatsAppService } from '../../services/whatsAppService';
+import { WhatsAppService } from '../../services/whatsappService';
 @Component({
   selector: 'whatsapp-btn',
   standalone: true,
