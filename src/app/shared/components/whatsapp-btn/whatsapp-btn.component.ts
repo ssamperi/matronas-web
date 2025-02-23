@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { WhatsappService } from '../../services/whatsAppService';
 import { TranslateService } from '@ngx-translate/core';
+import { WhatsAppService } from '../../services/whatsAppService';
 @Component({
   selector: 'whatsapp-btn',
   standalone: true,
@@ -11,13 +11,13 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class WhatsappBtnComponent { 
   
-  private whatsappService = inject(WhatsappService)
+  private whatsAppService = inject(WhatsAppService)
   private translateService = inject(TranslateService);
 
   openWhatsapp() {
     this.translateService.get('WHATSAPP_MESSAGE').subscribe(message => {
       const encodedMessage = encodeURIComponent(message);
-      this.whatsappService.sendMessage(encodedMessage);
+      this.whatsAppService.sendMessage(encodedMessage);
     });
   }
 }

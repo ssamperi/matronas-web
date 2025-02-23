@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { forkJoin } from 'rxjs';
 import { customClasses } from '../../../../shared/customTailwindClasses/customClasses';
 import { Meta, Title } from '@angular/platform-browser';
+import { LanguageSelectionService } from '../../../../shared/services/languageSelection.service';
 
 @Component({
   selector: 'section-aipap-agua',
@@ -21,11 +22,20 @@ export default class AipapAguaComponent {
   public translatedLists = computed<any>(() => this._translatedLists());
   public customClasses?: any;
 
+  private languageSelectionService = inject(LanguageSelectionService);
+
   constructor() {
     this.translateLists();
     this.customClasses = customClasses;
     this.setMetaTags();
+
+    effect( () => {
+        // Only read the signal, don't write
+        this.languageSelectionService.onLanguageChange();
+        this.translateLists();
+    }, { allowSignalWrites: true })
   }
+
   
   private translateLists() {
     const transaltion$ = forkJoin({

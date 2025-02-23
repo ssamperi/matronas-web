@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { WhatsappService } from '../../../../shared/services/whatsAppService';
+import { WhatsAppService } from '../../../../shared/services/whatsAppService';
+
 
 @Component({
   selector: 'matrona-pricing',
@@ -12,7 +13,7 @@ import { WhatsappService } from '../../../../shared/services/whatsAppService';
 })
 export class PricingComponent { 
 
-  private whatsappService = inject(WhatsappService);
+  private whatsAppService = inject(WhatsAppService);
   private translateService = inject(TranslateService);
 
   public readonly services: any = [
@@ -93,7 +94,7 @@ export class PricingComponent {
 
   public signUp(message: string) {
     this.translateService.get(message).subscribe( transalte => {
-      this.whatsappService.sendMessage(transalte);
+      this.whatsAppService.sendMessage(transalte);
     });
   }
 }
