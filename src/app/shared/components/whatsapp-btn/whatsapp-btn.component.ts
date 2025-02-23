@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { DeviceDetectorService } from 'ngx-device-detector';
+import { TranslateService } from '@ngx-translate/core';
+import { WhatsAppService } from '../../services/whatsAppService';
 @Component({
   selector: 'whatsapp-btn',
   standalone: true,
@@ -10,16 +11,13 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 export class WhatsappBtnComponent { 
   
-  private deviceService = inject(DeviceDetectorService);
+  private whatsAppService = inject(WhatsAppService)
+  private translateService = inject(TranslateService);
 
   openWhatsapp() {
-    const isDesktop = this.deviceService.isDesktop();
-    const message = encodeURIComponent('¡Hola! Estoy interesada en las actividades, me puedes dar más información? ¡Gracias!');
-    
-    if(isDesktop) {
-      window.location.href = `https://wa.me/+34620723466?text=${message}`;
-    } else {
-      window.location.href = `whatsapp://send?phone=+34620723466&text=${message}`;
-    }
+    this.translateService.get('WHATSAPP_MESSAGE').subscribe(message => {
+      const encodedMessage = encodeURIComponent(message);
+      this.whatsAppService.sendMessage(encodedMessage);
+    });
   }
 }
