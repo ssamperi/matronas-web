@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { WhatsAppService } from '../../../../shared/services/whatsAppService';
+import { WhatsAppService } from '../../../../shared/services/whatsappService';
 
 
 @Component({
