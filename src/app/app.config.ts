@@ -26,7 +26,7 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(),
     importProvidersFrom(
       TranslateModule.forRoot({
-        defaultLanguage: 'ES',
+        defaultLanguage: 'es',
         loader: {
           provide: TranslateLoader,
           useFactory: HttpLoaderFactory,
