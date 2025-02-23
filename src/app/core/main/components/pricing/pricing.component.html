@@ -15,13 +15,13 @@
             </ul>
             @if(service.promo) {
                 <ul class="text-left italic">
-                    <p class="italic">* {{'PRICING_PROMO' | translate}}</p>
+                    <p>* {{'PRICING_PROMO' | translate}}</p>
                     @for(description of service.promo; track $index) {
                         <li>{{description | translate}}</li>
                     }
                 </ul>
             }
-            <button class="self-center p-6 mt-auto w-fit rounded-lg text-xl font-medium text-white bg-primary-purple"
+            <button class="self-center p-6 mt-auto w-fit rounded-lg text-xl font-medium text-white hover:bg-primary-dark bg-primary-purple transition-colors duration-300"
             (pointerdown)="signUp(service.message)"
             >{{'PRICING_APUNTARME' | translate}}</button>
         </article>

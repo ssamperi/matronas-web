@@ -1,0 +1,11 @@
+.section-card {
+    box-shadow: 0 0 10px #9c7c8e;
+}
+
+.section-card-text {
+    clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%);
+}
+
+.section-card-image {
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 80% 100%);
+}
