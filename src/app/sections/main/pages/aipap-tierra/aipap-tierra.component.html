@@ -1,0 +1,55 @@
+<section class="w-full h-fit flex flex-col gap-4 items-center pl-8 pr-8">
+
+    <h1 [class]="customClasses.SECTION_TITLE">{{'AIPAP_TIERRA' | translate}}</h1>
+
+    <p class="text-center mt-4 text-balance leading-loose">{{'AIPAP_TIERRA_INFO.DESCRIPCION' | translate}}</p>
+
+    <article [class]="customClasses.AIPAP_ARTICLES">
+        <h2 [class]="customClasses.AIPAP_TITLES">{{'AIPAP_TIERRA_INFO.BENEFICIOS_TITULO' | translate }}</h2>
+        <ul [class]="customClasses.AIPAP_UL">
+            @for(li of BENEFICIOS; track $index) {
+                <li [class]="customClasses.AIPAP_LI">{{'AIPAP_TIERRA_INFO.BENEFICIOS.' + $index | translate }}</li>
+            }
+        </ul>
+    </article>
+
+    <article [class]="customClasses.AIPAP_ARTICLES">
+        <h2 [class]="customClasses.AIPAP_TITLES">{{'AIPAP_TIERRA_INFO.ENTORNO_TITULO' | translate }}</h2>
+        <ul [class]="customClasses.AIPAP_UL">
+            @for(li of ENTORNO; track $index) {
+                 <li [class]="customClasses.AIPAP_LI">{{'AIPAP_TIERRA_INFO.ENTORNO.' + $index | translate }}</li>
+            }
+        </ul>
+    </article>
+
+    <article [class]="customClasses.AIPAP_ARTICLES">
+        <h2 [class]="customClasses.AIPAP_TITLES">{{'AIPAP_SESION_TITULO' | translate }}</h2>
+        <label class="text-left">{{'AIPAP_SESION_DIVISION' | translate }}:</label>
+        <ul [class]="customClasses.AIPAP_UL">
+            @for(li of SESION; track $index) {
+                 <li [class]="customClasses.AIPAP_LI">{{'AIPAP_SESION.' + $index | translate }}</li>
+            }
+        </ul>
+    </article>
+
+
+    <article [class]="customClasses.AIPAP_ARTICLES">
+        <h2 [class]="customClasses.AIPAP_TITLES">{{'AIPAP_IMPARTE_TITULO' | translate }}</h2>
+        <p class="text-left">{{'AIPAP_IMPARTE_TEXTO' | translate }}</p>
+    </article>
+
+    <article [class]="customClasses.AIPAP_ARTICLES">
+        <h2 [class]="customClasses.AIPAP_TITLES">{{'AIPAP_EMPEZAR_TITULO' | translate }}</h2>
+        <p class="text-left lead">{{'AIPAP_EMPEZAR_TEXTO' | translate }}</p>
+    </article>
+
+    <article [class]="customClasses.AIPAP_ARTICLES">
+        <h2 [class]="customClasses.AIPAP_TITLES">{{'AIPAP_RESULTADOS_TITULO' | translate }}</h2>
+        <ul [class]="customClasses.AIPAP_UL">
+            @for(li of RESULTADOS; track $index) {
+                 <li [class]="customClasses.AIPAP_LI">{{'AIPAP_RESULTADOS.' + $index | translate }}</li>
+            }
+        </ul>
+    </article>
+
+</section>

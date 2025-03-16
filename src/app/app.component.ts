@@ -1,12 +1,12 @@
 import { isPlatformBrowser } from "@angular/common";
 import { Component, computed, inject, Inject, OnInit, PLATFORM_ID, signal } from "@angular/core";
 import { LanguageSelectionService } from "./shared/services/languageSelection.service";
-import { FooterComponent } from "./core/footer/components/footer/footer.component";
+import { FooterComponent } from "./sections/footer/components/footer/footer.component";
 import { WhatsappBtnComponent } from "./shared/components/whatsapp-btn/whatsapp-btn.component";
 import { TranslateModule } from "@ngx-translate/core";
 import { customClasses } from "./shared/customTailwindClasses/customClasses";
-import { MainLayoutComponent } from "./core/main/components/main-layout/main-layout.component";
-import { HeaderComponent } from "./core/header/components/header/header.component";
+import { MainLayoutComponent } from "./sections/main/components/main-layout/main-layout.component";
+import { HeaderComponent } from "./sections/header/components/header/header.component";
 
 @Component({
   selector: 'app-root',

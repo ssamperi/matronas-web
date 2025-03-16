@@ -10,84 +10,70 @@
     "AIPAP_INFO":"El método AIPAP es un sistema de preparación al parto focalizado en el acondicionamiento integral de la pelvis y se puede realizar en AGUA y en TIERRA",
     "AIPAP_AGUA_INFO":
         {
-            "TITULO_OBJETIVOS":"VISIÓN GENERAL Y OBJETIVOS",
-            "PARRAFOS_OBJETIVOS": [
-                    "AIPAP AGUA es un programa de ejercicios en el agua donde se trabajan todos los músculos, ligamentos y tendones que intervienen en los movimientos y posturas que facilitan el parto.",
-                    "Se divide en 8 sesiones de 50 minutos que se repiten de forma cíclica con un total de 86 ejercicios."        
-            ],
-            "TITULO_LISTA_OBJETIVOS": "Las sesiones se dividen en 4 grupos con distintos objetivos:", 
-            "LISTA_OBJETIVOS": [
-                    "Dos sesiones de mejora de la capacidad aeróbica: Los músculos, ligamentos y tendones necesitan tener la capacidad para oxigenarse, recibir la suficiente sangre para estar tonificados y con capacidad para hacer y deshacer la contracción muscular y mantener estable la articulación",
-                    "Dos sesiones de mejora de la fuerza de los músculos, ligamentos y tendones que intervienen en el parto. El cuerpo humano funciona como un conjunto de poleas y se compone de músculos agonistas y antagonistas. Mejorar la fuerza de estos músculos supone mayor capacidad para movilizar la pelvis. Esto supondrá que los músculos puedan tirar de la pelvis con la fuerza suficiente para crear verdaderos espacios",            
-                    "Dos sesiones de Elasticidad pélvica: Basándose en la biocinética vamos a buscar la máxima amplitud de movimientos y en todos los planos que me permita cada articulación , unos movimientos estáticos , o solo estiramientos no dan la suficiente movilidad a la articulación para sacar su máxima amplitud y así aumentar el espacio pélvico. Para ello se movilizan las tres articulaciones básicas lumbo-sacra, coxofemoral y sacroiliaca",
-                    "Dos sesiones de coordinación respiratoria: En una situación de tranquilidad es fácil relajarse y controlar la respiración. Pero hay que introducir factores estresantes que hagan tener una coordinación respiratoria idónea. Con dolor, con taquicardia, con miedo, gritos,… etc. Lo ideal es facilitar en el parto un ambiente sin demasiados estímulos, pero prepararemos a la mujer para cualquier situación. El agua  permite variar el ambiente y crear ambientes hostiles, cambios de ritmos que suben la frecuencia cardiaca...etc"
-            ],
-            "TITULO_PORQUE":"¿POR QUÉ DEBERÍA APUNTARME?",
-            "PARRAFOS_PORQUE": [
-                "Durante el embarazo, el ejercicio en el agua es una de las formas más recomendadas de actividad física. ",
-                "Bajo la superficie, el cuerpo solo soporta un 15 % de su peso habitual, lo que permite una libertad de movimiento incomparable, difícil de lograr en tierra firme. Esta flotabilidad natural minimiza el riesgo de lesiones casi por completo. ",
-                "Además, el entrenamiento acuático mejora la salud cardiovascular y potencia la agilidad, ya que el agua facilita una mayor variedad de movimientos mientras reduce la carga sobre las articulaciones."
-            ],
-            "TITULO_BENEFICIOS_MAMA":"Beneficios para Ti",
-            "LISTA_BENEFICIOS_MAMA": [
-                "Mayor probabilidad de un parto vaginal sin complicaciones: Aumenta las posibilidades de tener un parto eutócico, reduciendo la intervención médica",
-                "Mejor manejo del dolor durante el parto: Las técnicas enseñadas ayudan a controlar las sensaciones y facilitar el proceso",            
-                "Recuperación más rápida: Promueve una recuperación postparto más efectiva",
-                "Alivio de molestias físicas: Ideal para mitigar dolores de espalda o problemas en las articulaciones pélvicas comunes durante el embarazo"
-            ], 
-            "TITULO_BENEFICIOS_BEBE":"Beneficios para el Bebé",
-            "LISTA_BENEFICIOS_BEBE": [
-                "Prevención de la obesidad infantil: Favorece un desarrollo físico saludable desde el inicio",
-                "Mejora de la función placentaria: Optimiza la nutrición y el suministro de oxígeno",            
-                "Estímulo del crecimiento neuronal: Contribuye al desarrollo cerebral temprano",
-                "Fortalecimiento del vínculo madre-hijo: Fomenta una conexión emocional temprana y segura"
-            ],
-            "TITULO_IMPARTE":"¿QUIÉN LO IMPARTE?",
-            "PARRAFOS_IMPARTE":[
-                "Las clases están impartidas por matronas expertas formadas en el método AIPAP y acreditadas para poder realizar entrenamiento físico durante embarazo y postparto (Acreditación OWA).",
-                "El método AIPAP ha sido avalado por varias asociaciones de matronas de España."
-            ],
-            "TITULO_EMPEZAR":"¿CUÁNDO EMPEZAR LAS CLASES?",
-            "PARRAFO_EMPEZAR":"Se pueden comenzar desde la semana 20 de gestación. De manera ideal se recomienda empezar entorno la semana 28 de gestación y continuar hasta el final del embarazo. "
+            "DESCRIPCION": "El método AIPAP Agua ofrece un entrenamiento suave, de efecto relajante, con alivio inmediato y de bajo impacto ya que el trabajo se realiza en el agua.",
+            "BENEFICIOS_TITULO": "Beneficios específicos del agua",
+            "BENEFICIOS": {
+                "0": "Libertad de movimiento: El agua permite una mayor amplitud de movimientos sin esfuerzo adicional", 
+                "1": "Alivio inmediato: La flotabilidad del agua reduce la presión sobre la pelvis y la espalda, aliviando molestias como dolores lumbares o pélvicos", 
+                "2": "Entorno relajante: El agua crea un ambiente tranquilo que favorece la relajación y el control respiratorio"
+            },
+            "ENTORNO_TITULO": "Entorno de entrenamiento",
+            "ENTORNO": {
+                "0": "Se realiza en una piscina climatizada", 
+                "1": "El agua reduce el impacto sobre las articulaciones, ya que el cuerpo solo soporta el 15% de su peso", 
+                "2": "Ideal para mujeres que buscan un entrenamiento de bajo impacto pero efectivo"
+            },  
+            "ENFOQUE_TITULO": "Enfoque de los ejercicios",
+            "ENFOQUE": {
+                "0": "Los ejercicios se adaptan a la resistencia natural del agua, lo que permite trabajar la fuerza de manera suave pero efectiva", 
+                "1": "Se enfoca en la coordinación respiratoria y la elasticidad pélvica en un entorno que simula situaciones de estrés controlado", 
+                "2": "Recomendado para mujeres que buscan un entrenamiento suave pero efectivo, especialmente si experimentan dolores articulares o molestias pélvicas",
+                "3": "Ideal para quienes disfrutan del agua y buscan un ambiente relajante"
+            }
         },
-    "AIPAP_TIERRA_INFO": 
-    {
-        "TITULO_OBJETIVOS": "VISIÓN GENERAL Y OBJETIVOS",
-        "PARRAFOS_OBJETIVOS": [
-            "AIPAP TIERRA Es una técnica de entrenamiento diseñada específicamente para preparar el cuerpo de la mujer embarazada para el momento del parto. El objetivo es que la pelvis se adapte de manera óptima, haciendo el proceso de dilatación y expulsivo más sencillo tanto para la madre como para el bebé.",
-            "Se divide en 8 sesiones de 50 minutos que se repiten de forma cíclica con un total de 86 ejercicios, donde se trabaja la resistencia aeróbica, la fuerza y la flexibilidad. Esta combinación no solo es efectiva, sino también entretenida por lo que disfrutarás cada sesión sabiendo que estás preparando tu pelvis de la mejor manera."        
-        ],
-        "TITULO_LISTA_OBJETIVOS": "Las sesiones se dividen en 4 grupos con distintos objetivos:", 
-        "LISTA_OBJETIVOS": [
-            "Dos sesiones de mejora de la capacidad aeróbica: Los músculos, ligamentos y tendones necesitan tener la capacidad para oxigenarse, recibir la suficiente sangre para estar tonificados y con capacidad para hacer y deshacer la contracción muscular y mantener estable la articulación.",
-            "Dos sesiones de mejora de la fuerza de los músculos, ligamentos y tendones que intervienen en el parto. El cuerpo humano funciona como un conjunto de poleas y se compone de músculos agonistas y antagonistas. Mejorar la fuerza de estos músculos supone mayor capacidad para movilizar la pelvis. Esto supondrá que los músculos puedan tirar de la pelvis con la fuerza suficiente para crear verdaderos espacios.",            
-            "Dos sesiones de Flexibilidad pélvica: Buscaremos la máxima amplitud de movimientos y en todos los planos que me permita cada articulación para conseguir su máxima amplitud y así aumentar el espacio pélvico. Para ello se movilizan las tres articulaciones básicas lumbo-sacra, coxofemoral y sacroiliaca.",
-            "Dos sesiones de estiramientos: para mejorar la elasticidad musculoligamentosa."
-        ],
-        "TITULO_PORQUE": "¿POR QUÉ DEBERÍA APUNTARME?",
-        "PARRAFOS_PORQUE": [],
-        "TITULO_BENEFICIOS_MAMA": "Beneficios para Ti",
-        "LISTA_BENEFICIOS_MAMA": [
-            "Mayor probabilidad de un parto vaginal sin complicaciones: Aumenta las posibilidades de tener un parto eutócico, reduciendo la intervención médica.",
-            "Mejor manejo del dolor durante el parto: Las técnicas enseñadas ayudan a controlar las sensaciones y facilitar el proceso.",            
-            "Recuperación más rápida: Promueve una recuperación postparto más efectiva.",
-            "Alivio de molestias físicas: Ideal para mitigar dolores de espalda o problemas en las articulaciones pélvicas comunes durante el embarazo."
-        ], 
-        "TITULO_BENEFICIOS_BEBE": "Beneficios para tu Bebé",
-        "LISTA_BENEFICIOS_BEBE": [
-            "Prevención de la obesidad infantil: Favorece un desarrollo físico saludable desde el inicio.",
-            "Mejora de la función placentaria: Optimiza la nutrición y el suministro de oxígeno.",            
-            "Estímulo del crecimiento neuronal: Contribuye al desarrollo cerebral temprano.",
-            "Fortalecimiento del vínculo madre-hijo: Fomenta una conexión emocional temprana y segura."
-        ],
-        "TITULO_IMPARTE": "¿QUIÉN LO IMPARTE?",
-        "PARRAFOS_IMPARTE":[
-            "Las clases están impartidas por matronas expertas formadas en el método AIPAP y acreditadas para poder realizar entrenamiento físico durante embarazo y postparto (Acreditación OWA).",
-            "El método AIPAP ha sido avalado por varias asociaciones de matronas de España.",
-            "El método AIPAP durante el embarazo tiene un índice de partos eutócicos del 96%."
-        ],
-        "TITULO_EMPEZAR": "¿CUÁNDO EMPEZAR LAS CLASES?",
-        "PARRAFO_EMPEZAR": "Se pueden comenzar desde la semana 20 de gestación. De manera ideal se recomienda empezar entorno a la semana 26 de gestación y continuar hasta el final del embarazo."
+        "AIPAP_TIERRA_INFO":
+        {
+            "DESCRIPCION": "El método AIPAP Tierra ofrece un entrenamiento más intenso y funcional ya que el trabajo se realiza en suelo.",
+            "BENEFICIOS_TITULO": "Beneficios específicos del trabajo en suelo",
+            "BENEFICIOS": {
+                "0": "Fortalecimiento muscular: Al trabajar con el peso completo del cuerpo, se fortalece más intensamente la musculatura pélvica y abdominal", 
+                "1": "Mejora del equilibrio y la postura: Los ejercicios en tierra ayudan a corregir la postura y mejorar el equilibrio, algo clave durante el embarazo", 
+                "2": "Preparación funcional: Simula movimientos y posturas que serán útiles durante el parto en un entorno similar al real"
+            },
+            "ENTORNO_TITULO": "Entorno de entrenamiento",
+            "ENTORNO": {
+                "0": "Se realiza en suelo firme, en un espacio adaptado para ejercicios de preparación al parto", 
+                "1": "Permite trabajar con el peso completo del cuerpo, lo que fortalece músculos y articulaciones de manera diferente", 
+                "2": "Perfecto para quienes prefieren un entrenamiento más tradicional"
+            },  
+            "ENFOQUE_TITULO": "Enfoque de los ejercicios",
+            "ENFOQUE": {
+                "0": "Los ejercicios se centran en la fuerza muscular y la flexibilidad pélvica mediante movimientos funcionales y estiramientos", 
+                "1": "Incluye técnicas de estiramiento y movilización articular para maximizar el espacio pélvico", 
+                "2": "Perfecto para quienes no tienen acceso a una piscina o prefieren actividades en tierra firme"
+            }
+        },
+    "AIPAP_SESION_TITULO": "Enfoque de los ejercicios",
+    "AIPAP_SESION_DIVISION": "Las 8 sesiones se dividen en 4 grupos con objetivos específicos:",
+    "AIPAP_SESION": {
+        "0": "Mejora de la capacidad aeróbica: Tonifica músculos y mejora la oxigenación para mantener articulaciones estables", 
+        "1": "Fuerza muscular: Fortalece los músculos que movilizan la pelvis, creando espacios óptimos para el parto", 
+        "2": "Elasticidad pélvica: Aumenta la movilidad de las articulaciones clave (lumbo-sacra, coxofemoral y sacroilíaca) para maximizar el espacio pélvico",
+        "3": "Coordinación respiratoria: Te prepara para mantener el control respiratorio incluso en situaciones de estrés o dolor durante el parto"
+    },    
+    "AIPAP_IMPARTE_TITULO": "¿Quién imparte las clases?",
+    "AIPAP_IMPARTE_TEXTO": "Las sesiones están guiadas por matronas expertas formadas en el método AIPAP y acreditadas para entrenamiento físico durante el embarazo y postparto",
+    "AIPAP_EMPEZAR_TITULO": "¿Cuándo empezar?",
+    "AIPAP_EMPEZAR_TEXTO": "Idealmente, se recomienda comenzar alrededor de la semana 26 de gestación, aunque es posible iniciar desde la semana 20",
+    "AIPAP_RESULTADOS_TITULO": "Resultados esperados",
+    "AIPAP_RESULTADOS": {
+        "0": "Mayor probabilidad de un parto vaginal sin complicaciones",
+        "1": "Mejor manejo del dolor durante el parto",
+        "2": "Recuperación posparto más rápida",
+        "3": "Alivio de molestias físicas comunes en el embarazo",
+        "4": "Favorece un desarrollo físico y neuronal saludable",
+        "5": "Mejora la función placentaria",
+        "6": "Fortalece el vínculo madre-hijo desde el embarazo"
     },
     "AIPAP_AGUA_FRASE": "Entrena en el agua",
     "AIPAP_TIERRA_FRASE": "Fortalece tu cuerpo",
@@ -101,7 +87,7 @@
     "PRICING_DESC_REALIZADO": "Realizdo por matronas certificadas",
     "PRICING_APUNTARME": "Quiero apuntarme",
     "PRICING_PROMO": "Promoción:",
-    "PRICING_AIPAP_DESC_MATERIAL": "Material de includio",
+    "PRICING_AIPAP_DESC_MATERIAL": "Material de incluido",
     "PRICING_AGUGA_DESC_PISCINA": "Piscina cubierta climatizada",
     "PRICING_REGALO_DUO": "Regalo sorpresa",
     "PRICING_AIPAP_DESC_DUO_SESION": "16 sesiones",
