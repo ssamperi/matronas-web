@@ -1,16 +1,58 @@
 <footer id="contacto"
-        class="w-full h-auto pt-4 pb-4 bg-primary text-center content-center">
-    <section>
-
-
+        class="flex flex-col gap-2 w-full h-auto pt-4 pb-4">
+  
+    <section class="flex flex-col items-start gap-4 p-4 text-left">
+        <p class="font-bold text-primary-dark">{{'DONDE_ESTAMOS' | translate}}</p>
+        @for(location of locations; track $index) {
+            <article>
+                <div class="flex">
+                    <img class="w-5" src="/icons/location.svg" alt="icono localizacion">
+                    <p class="text-primary-purple font-semibold">{{location.type | translate}}</p>
+                </div>
+                <p>{{location.center | translate }}</p>
+                <p>{{location.street | translate }}</p>
+                <p>{{location.city}}</p>
+                <div>
+                    <!-- <label>{{location.time | translate }}</label> -->
+                    <ul>
+                        @for(day of location.schedule; track $index) {
+                            <li>
+                                {{day.day | translate}}: {{day.hours | translate}}
+                            </li>
+                        }
+                    </ul>
     
-    </section>
-    <section>
-        <article class="flex flex-col gap-4 text-primary-dark">
+                </div>
+            </article>
+        }
+        <div class="flex">
+            <img class="w-5"
+                src="/icons/email.svg" 
+                alt="icono email">
             <a href="mailto:matronas360gmail.com" 
-            class="text-xl font-bold hover:text-white cursor-pointer visited:text-white visited:no-underline">
-                matronas360&#64;gmail.com</a>
-            <p class="font-semibold">&copy; 2025 <span class="text-red">&#10084;</span> Matronas 360</p>
-        </article>
+            class="text-lg cursor-pointer visited:no-underline">matronas360&#64;gmail.com</a>
+        </div>
+         
+
+    </section>
+
+
+
+
+
+
+    <hr class="mx-4 text-primary-purple">
+
+    <section class="flex flex-col gap-2 text-primary-dark">
+        <p>{{'DERECHOS_RESERVADOS' | translate}}</p>
+        <div class="flex gap-4 justify-center">
+            <a class="underline" href="">{{'AVISO_LEGAL' | translate}}</a>
+            <a class="underline" href="">{{'POLITICA_PRIVACIDAD' | translate}}</a>
+        </div>
+        <p class="flex justify-center">&copy; 2025 
+            <img class="w-5 mx-1"
+                src="/icons/matronas360-solo-logo.svg" 
+                alt="matronas 360 logo"> 
+            Matronas 360</p>
     </section>
 </footer>
