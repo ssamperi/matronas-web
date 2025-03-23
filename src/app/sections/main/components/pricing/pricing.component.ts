@@ -89,6 +89,17 @@ export class PricingComponent {
         'PRICING_AIPAP_DESC_MATERIAL',
       ],
       message: 'PRICING_WHATS_SOLO',
+    },
+    {
+      name: 'PRICING_POSPARTO',
+      price: '120€',
+      description: [
+        'PRICING_AIPAP_DESC_SESION',
+        'PRICING_DESC_TIEMPO',
+        'PRICING_DESC_REALIZADO',
+        'PRICING_DESC_PERSONALIZADO'
+      ],
+      message: 'PRICING_WHATS_SOLO',
     }
   ]
 

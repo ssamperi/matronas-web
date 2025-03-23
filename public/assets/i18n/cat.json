@@ -1,8 +1,8 @@
 {
     "MENU_CONOCENOS": "Qui som?",
     "MENU_SERVICIOS": "Serveis",
-    "AIPAP_AGUA": "AIPAP Agua",
-    "AIPAP_TIERRA": "AIPAP Tierra",
+    "AIPAP_AGUA": "AIPAP Aigua",
+    "AIPAP_TIERRA": "AIPAP Terra",
     "MENU_PRECIOS": "Preus",
     "MENU_CONTACTO": "Contacte",
     "HERO_TEXT_TITULO": "Fes més fort el teu cos i ment amb el suport de la teva llevadora",
@@ -99,5 +99,13 @@
     "PRICING_WHATS_TIERRA": "Hola! Vull apuntar-me al curs d'AIPAP terra!",
     "PRICING_WHATS_DUO": "Hola! Vull apuntar-me al Pack DUO",
     "PRICING_WHATS_SOLO": "Hola! Vull apuntar-me a una sessió",
-    "WHATSAPP_MESSAGE": "Hola! Estic interessada en les activitats, ¿Podries donar-me més informació? Gràcies!"     
+    "WHATSAPP_MESSAGE": "Hola! Estic interessada en les activitats, ¿Podries donar-me més informació? Gràcies!",
+    "DERECHOS_RESERVADOS": "Tots els drets reservats",
+    "AVISO_LEGAL": "Avís legal",
+    "POLITICA_PRIVACIDAD": "Política de privacitat",
+    "DONDE_ESTAMOS": "On estem?",
+    "JUEVES": "Dijous",
+    "HORARIO": "Horari",
+    "PRICING_POSPARTO": "Postpart",
+    "PRICING_WHATS_POSPARTO": "Hola! Vull apuntar-me a les classes de postpart"
 }
