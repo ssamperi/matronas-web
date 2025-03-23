@@ -109,5 +109,7 @@
     "JUEVES": "Jueves",
     "HORARIO": "Horario",
     "PRICING_POSPARTO": "Posparto",
+    "PRICING_DESC_MATERIAL": "Entrega del material trabajado",
+    "PRICING_DESC_MATERIAL_ADICIONAL": "Entrega de material adicional",
     "PRICING_WHATS_POSPARTO": "¡Hola! Quiero apuntarme a las clases de posparto"
 }

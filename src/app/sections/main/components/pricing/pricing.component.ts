@@ -30,6 +30,7 @@ export class PricingComponent {
         'PRICING_DESC_PERSONALIZADO',
         'PRICING_AIPAP_DESC_MATERIAL',
         'PRICING_AGUGA_DESC_PISCINA',
+        'PRICING_DESC_MATERIAL_ADICIONAL'
       ],
       message: 'PRICING_WHATS_AGUA',
       promo: [
@@ -48,7 +49,8 @@ export class PricingComponent {
         'PRICING_DESC_TIEMPO',
         'PRICING_DESC_REALIZADO',
         'PRICING_DESC_PERSONALIZADO',
-        'PRICING_AIPAP_DESC_MATERIAL'
+        'PRICING_AIPAP_DESC_MATERIAL',
+        'PRICING_DESC_MATERIAL_ADICIONAL'
       ],
       message: 'PRICING_WHATS_TIERRA',
       promo: [
@@ -97,7 +99,8 @@ export class PricingComponent {
         'PRICING_AIPAP_DESC_SESION',
         'PRICING_DESC_TIEMPO',
         'PRICING_DESC_REALIZADO',
-        'PRICING_DESC_PERSONALIZADO'
+        'PRICING_DESC_PERSONALIZADO',
+        'PRICING_DESC_MATERIAL'
       ],
       message: 'PRICING_WHATS_SOLO',
     }

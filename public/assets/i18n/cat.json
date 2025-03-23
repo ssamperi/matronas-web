@@ -107,5 +107,7 @@
     "JUEVES": "Dijous",
     "HORARIO": "Horari",
     "PRICING_POSPARTO": "Postpart",
+    "PRICING_DESC_MATERIAL": "Entrega del material treballat",
+    "PRICING_DESC_MATERIAL_ADICIONAL": "Entrega de material adicional",
     "PRICING_WHATS_POSPARTO": "Hola! Vull apuntar-me a les classes de postpart"
 }
