@@ -10,7 +10,15 @@
                     <article class="text-left w-fit">
                         <div class="flex">
                             <img class="w-5" src="/icons/location.svg" alt="icono localizacion">
-                            <p class="text-primary-dark font-semibold">{{location.type | translate}}</p>
+                            <p class="text-primary-dark font-semibold">
+                                @for(type of location.type; track $index) {
+                                    @if($index === location.type.length - 1) {
+                                        {{type | translate}}
+                                    } @else {
+                                        {{type | translate}} /
+                                    }
+                                }   
+                </p>
                         </div>
                         <p>{{location.center | translate }}</p>
                         <p>{{location.street | translate }}</p>
