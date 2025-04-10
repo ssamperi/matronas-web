@@ -10,9 +10,9 @@ export class WhatsAppService {
         const isDesktop = this.deviceService.isDesktop();
 
         if(isDesktop) {
-            window.location.href = `https://wa.me/+34620723466?text=${message}`;
+            window.location.href = `https://wa.me/+34613663611?text=${message}`;
           } else {
-            window.location.href = `whatsapp://send?phone=+34620723466&text=${message}`;
+            window.location.href = `whatsapp://send?phone=+34613663611&text=${message}`;
           }
     }
 }
