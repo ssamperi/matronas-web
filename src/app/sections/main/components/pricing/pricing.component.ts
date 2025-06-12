@@ -40,7 +40,7 @@ export class PricingComponent {
     },
     {
       name: 'AIPAP_TIERRA',
-      price: '148€',
+      price: '160€',
       description: [
         'PRICING_AIPAP_DESC_SESION',
         {
