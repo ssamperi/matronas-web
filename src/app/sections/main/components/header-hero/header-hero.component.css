@@ -1,37 +1,36 @@
-.hero-image {
-    mask-image: 
-        linear-gradient(
-            transparent,
-            black 25%,
-            black 65%,
-            transparent),
-        linear-gradient(
-            to right, 
-            transparent, 
-            black 25%, 
-            black 65%, 
-            transparent);
-    mask-composite: intersect;
+::ng-deep .highlight-word {
+    color: #d3ab9e; /* Primary color */
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* .hero-text {
     animation: fadeIn 2s ease-out;
 } */
 
-.hero-text > h1 {
+.hero-text {
     line-height: 1.5;
     word-spacing: normal;
     letter-spacing: 0.2rem;
-    /* animation: fadeInUp 1.5s ease-out; */
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
 }
 
-/* @keyframes fadeInUp {
+@keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(20px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
     }
-} */
+}
+
+.hero-video {
+    mask-image: 
+        linear-gradient(
+            transparent,
+            black 2%,
+            black 98%,
+            transparent);
+}

@@ -1,16 +1,19 @@
-<div class="flex flex-col items-center gap-8 pl-4 pr-4">
+<div class="flex flex-col items-center gap-8">
     
-    <img class="hero-image xl:max-w-7xl"
-        ngSrc="/images/hero/hero.webp" 
-        alt="imagen barriga mama"
-        width="1280"
-        height="718"
-        priority
-        fetchpriority="high">
-
-    
-    <div class="hero-text lg:content-center">
-        <h1 class="text-4xl md:text-5xl lg:text-5xl xl:text-7xl xl:max-w-7xl pl-5 pr-5 text-primary-dark">
-            {{'HERO_TEXT_TITULO' | translate}}</h1>
+    <!-- Video en bucle con filtro oscuro -->
+    <div class="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] bg-blue-400">
+        <video autoplay loop muted playsinline preload="metadata" class="hero-video w-full h-full object-cover filter brightness-75">
+            <source src="/videos/hero-pool.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento video.
+        </video>
+        
+        <!-- Overlay para mejor legibilidad del texto -->
+        <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+        
+        <!-- Texto centrado sobre el video -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="hero-text text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-center text-white font-bold drop-shadow-lg"
+                [innerHTML]="'HERO_TEXT_TITULO' | translate"></h1>
+        </div>
     </div>
 </div>
