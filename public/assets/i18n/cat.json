@@ -5,7 +5,8 @@
     "AIPAP_TIERRA": "AIPAP Terra",
     "MENU_PRECIOS": "Preus",
     "MENU_CONTACTO": "Contacte",
-    "HERO_TEXT_TITULO": "Fes més fort el teu cos i ment amb el suport de la teva llevadora",
+    "CONTACTANOS": "Contacta'ns",
+    "HERO_TEXT_TITULO": "Enforteix el cos i la ment<br><br>Connecta amb el teu <span class='highlight-word'>nadó</span><br>amb cada <span class='highlight-word'>moviment</span>",
     "ABOUT_US": "",
     "AIPAP_INFO": "El mètode AIPAP és un sistema de preparació al part focalitzat en l'acondicionament integral de la pelvis i es pot realitzar en AIGUA i en TERRA",
     "AIPAP_AGUA_INFO": {
@@ -76,7 +77,7 @@
     "AIPAP_AGUA_FRASE": "Entrena a l'aigua",
     "AIPAP_TIERRA_FRASE": "Enforteix el teu cos",
     "SABER_MAS": "Saber més",
-    "PRICING_AIPAP_DESC_SESION": "8 sessions",
+    "PRICING_AIPAP_DESC_SESION": "1 sessió/setmana",
     "PRICING_AIPAP_DESC_PROMO": "2 sessions GRATUÏTES",
     "PRICING_AIPAP_DESC_PROMO_INFO_TOTAL": "Total de 10 sessions",
     "PRICING_AIPAP_DESC_PROMO_INFO_VALIDO": "Vàlid fins al 30 de Setembre",
@@ -88,7 +89,7 @@
     "PRICING_AIPAP_DESC_MATERIAL": "Material inclòs",
     "PRICING_AGUGA_DESC_PISCINA": "Piscina coberta climatitzada",
     "PRICING_REGALO_DUO": "Regal sorpresa",
-    "PRICING_AIPAP_DESC_DUO_SESION": "16 sessions",
+    "PRICING_AIPAP_DESC_DUO_SESION": "2 sessions/setmana",
     "PRICING_AIPAP_DESC_DUO_PROMO": "4 sessions GRATUÏTES",
     "PRICING_AIPAP_DESC_SOLO_SESION": "1 sessió",
     "PRICING_SOLO_NOMBRE": "Al teu ritme",
@@ -105,9 +106,13 @@
     "POLITICA_PRIVACIDAD": "Política de privacitat",
     "DONDE_ESTAMOS": "On estem?",
     "JUEVES": "Dijous",
+    "MARTES": "Dimarts",
     "HORARIO": "Horari",
+    "HORARIOS": "Horaris",
+    "CENTRE_ESPORTIU": "Centre Esportiu Royal Tarraco",
     "PRICING_POSPARTO": "Postpart",
     "PRICING_DESC_MATERIAL": "Entrega del material treballat",
     "PRICING_DESC_MATERIAL_ADICIONAL": "Entrega de material adicional",
-    "PRICING_WHATS_POSPARTO": "Hola! Vull apuntar-me a les classes de postpart"
+    "PRICING_WHATS_POSPARTO": "Hola! Vull apuntar-me a les classes de postpart",
+    "PRICING_POSPARTO_DESC_SESION": "1 sessió/setmana"
 }
