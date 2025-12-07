@@ -13,26 +13,11 @@ import { scheduled } from 'rxjs';
 export class FooterComponent {
   public readonly locations = [
     {
-      type: ['AIPAP_AGUA'],
-      center: 'Centre Esportiu Royal Tarraco',
-      street: 'Carrer de Sant Auguri, 5',
+      type: ['AIPAP_AGUA', 'AIPAP_TIERRA', 'PRICING_POSPARTO'],
+      center: 'CENTRE_ESPORTIU',
+      street: 'C/ de Sant Auguri, 5',
       city: '43002 Tarragona',
-      time: 'HORARIO',
-      schedule: [
-        {
-          day: 'JUEVES',
-          hours: '11:30 - 12:30',
-        }
-      ]
-    },
-    {
-      type: ['AIPAP_TIERRA', 'PRICING_POSPARTO'],
-      center: 'Coworking Reus - Benestar físic i emocional',
-      street: 'Carrer de Pròsper de Bofarull, 28, Baixos',
-      city: '43202 Reus',
-      time: 'HORARIO',
-      schedule: [
-      ]
+      time: 'HORARIO'
     }
   ]
  }

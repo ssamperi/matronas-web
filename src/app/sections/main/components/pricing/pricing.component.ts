@@ -19,12 +19,12 @@ export class PricingComponent {
   public readonly services: any = [
     {
       name: 'AIPAP_AGUA',
-      price: '198€',
+      price: '80€/mes',
       description: [
         'PRICING_AIPAP_DESC_SESION',
-        {
-          promo:'PRICING_AIPAP_DESC_PROMO'
-        },
+        // {
+        //   promo:'PRICING_AIPAP_DESC_PROMO'
+        // },
         'PRICING_DESC_TIEMPO',
         'PRICING_DESC_REALIZADO',
         'PRICING_DESC_PERSONALIZADO',
@@ -33,19 +33,41 @@ export class PricingComponent {
         'PRICING_DESC_MATERIAL_ADICIONAL'
       ],
       message: 'PRICING_WHATS_AGUA',
-      promo: [
-        'PRICING_AIPAP_DESC_PROMO_INFO_TOTAL',
-        'PRICING_AIPAP_DESC_PROMO_INFO_VALIDO'
-      ]
+      // promo: [
+      //   'PRICING_AIPAP_DESC_PROMO_INFO_TOTAL',
+      //   'PRICING_AIPAP_DESC_PROMO_INFO_VALIDO'
+      // ]
+    },
+    {
+      name: 'Pack DUO',
+      price: '150€/mes',
+      description: [
+        'PRICING_AIPAP_DESC_DUO_SESION',
+        // {
+        //   promo:'PRICING_AIPAP_DESC_DUO_PROMO'
+        // },
+        'PRICING_DESC_TIEMPO',
+        'PRICING_DESC_REALIZADO',
+        'PRICING_DESC_PERSONALIZADO',
+        'PRICING_AIPAP_DESC_MATERIAL',
+        // 'PRICING_REGALO_DUO'
+      ],
+      message: 'PRICING_WHATS_DUO',
+      // promo: [
+      //   'PRICING_DUO_DESC_PROMO_INFO_TOTAL',
+      //   'PRICING_DUO_DESC_PROMO_INFO_AGUA',
+      //   'PRICING_DUO_DESC_PROMO_INFO_TIERRA',
+      //   'PRICING_AIPAP_DESC_PROMO_INFO_VALIDO'
+      // ]
     },
     {
       name: 'AIPAP_TIERRA',
-      price: '160€',
+      price: '70€/mes',
       description: [
         'PRICING_AIPAP_DESC_SESION',
-        {
-          promo:'PRICING_AIPAP_DESC_PROMO'
-        },
+        // {
+        //   promo:'PRICING_AIPAP_DESC_PROMO'
+        // },
         'PRICING_DESC_TIEMPO',
         'PRICING_DESC_REALIZADO',
         'PRICING_DESC_PERSONALIZADO',
@@ -53,32 +75,10 @@ export class PricingComponent {
         'PRICING_DESC_MATERIAL_ADICIONAL'
       ],
       message: 'PRICING_WHATS_TIERRA',
-      promo: [
-        'PRICING_AIPAP_DESC_PROMO_INFO_TOTAL',
-        'PRICING_AIPAP_DESC_PROMO_INFO_VALIDO'
-      ]
-    },
-    {
-      name: 'Pack DUO',
-      price: '300€',
-      description: [
-        'PRICING_AIPAP_DESC_DUO_SESION',
-        {
-          promo:'PRICING_AIPAP_DESC_DUO_PROMO'
-        },
-        'PRICING_DESC_TIEMPO',
-        'PRICING_DESC_REALIZADO',
-        'PRICING_DESC_PERSONALIZADO',
-        'PRICING_AIPAP_DESC_MATERIAL',
-        'PRICING_REGALO_DUO'
-      ],
-      message: 'PRICING_WHATS_DUO',
-      promo: [
-        'PRICING_DUO_DESC_PROMO_INFO_TOTAL',
-        'PRICING_DUO_DESC_PROMO_INFO_AGUA',
-        'PRICING_DUO_DESC_PROMO_INFO_TIERRA',
-        'PRICING_AIPAP_DESC_PROMO_INFO_VALIDO'
-      ]
+      // promo: [
+      //   'PRICING_AIPAP_DESC_PROMO_INFO_TOTAL',
+      //   'PRICING_AIPAP_DESC_PROMO_INFO_VALIDO'
+      // ]
     },
     {
       name: 'PRICING_SOLO_NOMBRE',
@@ -94,15 +94,15 @@ export class PricingComponent {
     },
     {
       name: 'PRICING_POSPARTO',
-      price: '120€',
+      price: '70€/mes',
       description: [
-        'PRICING_AIPAP_DESC_SESION',
+        'PRICING_POSPARTO_DESC_SESION',
         'PRICING_DESC_TIEMPO',
         'PRICING_DESC_REALIZADO',
         'PRICING_DESC_PERSONALIZADO',
         'PRICING_DESC_MATERIAL'
       ],
-      message: 'PRICING_WHATS_SOLO',
+      message: 'PRICING_WHATS_POSPARTO',
     }
   ]
 

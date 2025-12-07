@@ -5,7 +5,8 @@
     "AIPAP_TIERRA": "AIPAP Tierra",
     "MENU_PRECIOS": "Precios",
     "MENU_CONTACTO": "Contacto",
-    "HERO_TEXT_TITULO": "Fortalece tu cuerpo y mente con el apoyo de tu matrona",
+    "CONTACTANOS": "Contáctanos",
+    "HERO_TEXT_TITULO": "Fortalece cuerpo y mente<br><br>Conecta con tu <span class='highlight-word'>bebé</span><br>con cada <span class='highlight-word'>movimiento</span>",
     "ABOUT_US":"",
     "AIPAP_INFO":"El método AIPAP es un sistema de preparación al parto focalizado en el acondicionamiento integral de la pelvis y se puede realizar en AGUA y en TIERRA",
     "AIPAP_AGUA_INFO":
@@ -78,7 +79,7 @@
     "AIPAP_AGUA_FRASE": "Entrena en el agua",
     "AIPAP_TIERRA_FRASE": "Fortalece tu cuerpo",
     "SABER_MAS": "Saber más",
-    "PRICING_AIPAP_DESC_SESION": "8 sesiones",
+    "PRICING_AIPAP_DESC_SESION": "1 sesión/semana",
     "PRICING_AIPAP_DESC_PROMO": "2 sesiones GRATIS",
     "PRICING_AIPAP_DESC_PROMO_INFO_TOTAL": "Total de 10 sesiones",
     "PRICING_AIPAP_DESC_PROMO_INFO_VALIDO": "Válido hasta el 30 de Septiembre",
@@ -90,7 +91,7 @@
     "PRICING_AIPAP_DESC_MATERIAL": "Material incluido",
     "PRICING_AGUGA_DESC_PISCINA": "Piscina cubierta climatizada",
     "PRICING_REGALO_DUO": "Regalo sorpresa",
-    "PRICING_AIPAP_DESC_DUO_SESION": "16 sesiones",
+    "PRICING_AIPAP_DESC_DUO_SESION": "2 sesiones/semana",
     "PRICING_AIPAP_DESC_DUO_PROMO": "4 sesiones GRATIS",
     "PRICING_AIPAP_DESC_SOLO_SESION": "1 sesión",
     "PRICING_SOLO_NOMBRE": "A tu ritmo",
@@ -107,9 +108,13 @@
     "POLITICA_PRIVACIDAD": "Política de privacidad",
     "DONDE_ESTAMOS": "¿Dónde estamos?",
     "JUEVES": "Jueves",
+    "MARTES": "Martes",
     "HORARIO": "Horario",
+    "HORARIOS": "Horarios",
+    "CENTRE_ESPORTIU": "Centre Esportiu Royal Tarraco",
     "PRICING_POSPARTO": "Posparto",
     "PRICING_DESC_MATERIAL": "Entrega del material trabajado",
     "PRICING_DESC_MATERIAL_ADICIONAL": "Entrega de material adicional",
-    "PRICING_WHATS_POSPARTO": "¡Hola! Quiero apuntarme a las clases de posparto"
+    "PRICING_WHATS_POSPARTO": "¡Hola! Quiero apuntarme a las clases de posparto",
+    "PRICING_POSPARTO_DESC_SESION": "1 sesión/semana"
 }
